@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 9bf54396edf2a48d7abbd2d5e314af76
+  - enabled: 1
+    path: Assets/Scenes/AR.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/PlanetGuide.unity
+    guid: e982cd48a2b3f4e3d87a5e16115ff10f
+  - enabled: 1
+    path: Assets/Scenes/Quiz.unity
+    guid: c7ca165f7cbdf429e9d2dc2d844d46fb
+  - enabled: 1
+    path: Assets/Scenes/Instruction.unity
+    guid: e1b6c357541ac4c12875e99fa76930a9
+  - enabled: 1
+    path: Assets/Scenes/About.unity
+    guid: deaaf62cd4a0d452d8746b2c4da3b071
+  - enabled: 1
+    path: Assets/Scenes/Mercury.unity
+    guid: c9de3e25e1cad4a5a9ef70ec21393257
+  m_configObjects:
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 8a9c3cbc5dd184567a2bfd6be28d8d5a, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 4e94922ca27224d3cadf8ef4642265e2, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b696312f1f8874af98f96397bc9a74f7, type: 2}
