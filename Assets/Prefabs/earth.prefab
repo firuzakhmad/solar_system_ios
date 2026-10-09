@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 5638521032955075867}
   - component: {fileID: 3890594456719621073}
   - component: {fileID: 4829626169931774423}
+  - component: {fileID: 5690087640187662264}
+  - component: {fileID: 9125703344575746783}
+  - component: {fileID: -8199450144933926958}
   m_Layer: 0
   m_Name: earth
   m_TagString: Untagged
@@ -28,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 7662266659007147989}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -62,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b5358d614b27b46109d0386e4f1ad070, type: 2}
+  - {fileID: 2100000, guid: 75766e6cf1e554a0f84788c6b4661792, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -105,3 +108,48 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5690087640187662264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7662266659007147989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15db772cf83e64dcab44c5744bb33e4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Earth
+  description: Earth is the third planet from the Sun and the only astronomical object
+    currently known to support life. It has a nitrogen- and oxygen-rich atmosphere
+    and about 71% of its surface is covered by water.
+--- !u!114 &9125703344575746783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7662266659007147989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19019fc9584c4489ebc1bf4f2801b3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetInfo: {fileID: 5690087640187662264}
+--- !u!114 &-8199450144933926958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7662266659007147989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 146a2fba877af4a8a8b73e52fa65e596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 0.2
+  scaleSpeed: 0.005
+  minScale: 0.05
+  maxScale: 2

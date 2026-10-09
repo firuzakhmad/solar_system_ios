@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 492ec50943ac643308adc9de6f20fdad, type: 3}
+  m_Name: Question_15
+  m_EditorClassIdentifier: 
+  questionText: What forms an impact crater?
+  answers:
+  - A star
+  - A volcano
+  - An impact
+  - A cloud
+  correctAnswerIndex: 2
+  explanation: Impact craters form when space objects collide with a planetary surface.

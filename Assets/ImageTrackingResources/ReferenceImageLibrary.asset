@@ -23,7 +23,27 @@ MonoBehaviour:
     m_SerializedTextureGuid:
       m_GuidLow: 2617040143951657101
       m_GuidHigh: 4499101310502259049
-    m_Size: {x: 0.07, y: 0.07}
+    m_Size: {x: 0.06, y: 0.06}
     m_SpecifySize: 1
-    m_Name: 8k_earth_daymap
+    m_Name: earth
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5680197466787175557
+      m_GuidHigh: 1214295363918309540
+    m_SerializedTextureGuid:
+      m_GuidLow: 13039365997822428316
+      m_GuidHigh: 105324614243604537
+    m_Size: {x: 0.05, y: 0.05}
+    m_SpecifySize: 1
+    m_Name: mars
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5388897944788201950
+      m_GuidHigh: 2713883522994112905
+    m_SerializedTextureGuid:
+      m_GuidLow: 9560914690317843301
+      m_GuidHigh: 12484274747806737833
+    m_Size: {x: 0.7, y: 0.7}
+    m_SpecifySize: 1
+    m_Name: jupiter
     m_Texture: {fileID: 0}

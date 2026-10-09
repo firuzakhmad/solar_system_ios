@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mercury.unity
     guid: c9de3e25e1cad4a5a9ef70ec21393257
+  - enabled: 1
+    path: Assets/Scenes/Saturn.unity
+    guid: 7c5c45790ad19432a8cca745de5fe3e4
   m_configObjects:
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 8a9c3cbc5dd184567a2bfd6be28d8d5a, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 4e94922ca27224d3cadf8ef4642265e2, type: 2}
