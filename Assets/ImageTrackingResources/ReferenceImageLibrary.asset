@@ -47,3 +47,43 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: jupiter
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5390212991455627783
+      m_GuidHigh: 9909789738729223322
+    m_SerializedTextureGuid:
+      m_GuidLow: 7259637914078770696
+      m_GuidHigh: 12809296356320541865
+    m_Size: {x: 0.06, y: 0.06}
+    m_SpecifySize: 1
+    m_Name: venus
+    m_Texture: {fileID: 2800000, guid: 3a9f76086a3864bfa9fc30652bc3c3b1, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5406336716918896626
+      m_GuidHigh: 2254451848572845477
+    m_SerializedTextureGuid:
+      m_GuidLow: 2696656585925193893
+      m_GuidHigh: 9073938737069292201
+    m_Size: {x: 0.06, y: 0.06}
+    m_SpecifySize: 1
+    m_Name: mercury
+    m_Texture: {fileID: 2800000, guid: 9d49f0a572e0256ca9faaba0341bed7d, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5502904071041137875
+      m_GuidHigh: 15883346106524158376
+    m_SerializedTextureGuid:
+      m_GuidLow: 13351646289936328978
+      m_GuidHigh: 1440651852916931834
+    m_Size: {x: 0.06, y: 0.06}
+    m_SpecifySize: 1
+    m_Name: saturn
+    m_Texture: {fileID: 2800000, guid: 86512912938fb94afa3c1f323a39fe13, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5433805720201952087
+      m_GuidHigh: 13169614313806390441
+    m_SerializedTextureGuid:
+      m_GuidLow: 4790247075405436191
+      m_GuidHigh: 11931302782724976504
+    m_Size: {x: 0.06, y: 0.06}
+    m_SpecifySize: 1
+    m_Name: neptune
+    m_Texture: {fileID: 2800000, guid: d3e5151f6055427a78aff387aa8094a5, type: 3}

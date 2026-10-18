@@ -29,7 +29,56 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Saturn.unity
     guid: 7c5c45790ad19432a8cca745de5fe3e4
+  - enabled: 1
+    path: Assets/Scenes/Venus.unity
+    guid: 8d6e2ea421877431e9e75064f7151cdb
+  - enabled: 1
+    path: Assets/Scenes/Earth.unity
+    guid: fa7bc3cfc4be45136af81576301a27bd
+  - enabled: 1
+    path: Assets/Scenes/Mars.unity
+    guid: 815a999319b1c4415bdfdecb76d47802
+  - enabled: 1
+    path: Assets/Scenes/Jupiter.unity
+    guid: 24b99a12cca3d9648885e60e02f9a70e
+  - enabled: 1
+    path: Assets/Scenes/Uranus.unity
+    guid: fcbfde26baf1742deac6e4c3901a7662
+  - enabled: 1
+    path: Assets/Scenes/Neptune.unity
+    guid: 8729e362a1b64a019bbde227f571fc5f
+  - enabled: 1
+    path: Assets/Scenes/Pluto.unity
+    guid: 73d05c25c3c3309e3aa3d42cead53f4a
+  - enabled: 1
+    path: Assets/Scenes/Sun.unity
+    guid: d0fd4e4ae944e36ef8dc74603407bbab
+  - enabled: 1
+    path: Assets/Scenes/Moon.unity
+    guid: 31c29b76d78103a76a410080b8e1333d
+  - enabled: 1
+    path: Assets/Scenes/MilkyWay.unity
+    guid: 0364bc65c5429dc90b8dc64c7d6f7db1
+  - enabled: 1
+    path: Assets/Scenes/Crater.unity
+    guid: 27b11d5894ca89e53aff1beee940ec98
+  - enabled: 1
+    path: Assets/Scenes/Galaxy.unity
+    guid: c6c9a1bf1b2d623108661cff2ee5ee3e
+  - enabled: 1
+    path: Assets/Scenes/Star.unity
+    guid: 3e96ac0821e115a719128e8b0f22734b
+  - enabled: 1
+    path: Assets/Scenes/Nebula.unity
+    guid: 43bea7ae357c542d0b8908f2bda60e13
+  - enabled: 1
+    path: Assets/Scenes/Asteroid.unity
+    guid: 3e971a4c6afbfc30d909526eeaef02f7
+  - enabled: 1
+    path: Assets/Scenes/Eclipse.unity
+    guid: bb5d67b9cd822d1b0b10e508c9e0df27
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 077381b7155ee32358cb4832f7681282, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 8a9c3cbc5dd184567a2bfd6be28d8d5a, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 4e94922ca27224d3cadf8ef4642265e2, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b696312f1f8874af98f96397bc9a74f7, type: 2}
