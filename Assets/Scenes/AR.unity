@@ -475,7 +475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SerializedLibrary: {fileID: 11400000, guid: bd355877408f242c597de4de8a751029, type: 2}
-  m_MaxNumberOfMovingImages: 1
+  m_MaxNumberOfMovingImages: 20
   m_TrackedImagePrefab: {fileID: 0}
 --- !u!114 &223974230
 MonoBehaviour:
@@ -490,13 +490,82 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arPrefabs:
+  - {fileID: 7662266659007147989, guid: 6c7c4e6d580184f67bead5a19be25345, type: 3}
+  - {fileID: 8824001277151688098, guid: 9a53938b965014c128c4ad550e88a9e1, type: 3}
+  - {fileID: 2967538428815204597, guid: 861f4351c04654a89b27315fad155ead, type: 3}
+  - {fileID: 6891744028383472963, guid: 1d374fb7221da48a7b11fe8aacc30d2e, type: 3}
   - {fileID: 7662266659007147989, guid: 3bd7c0d13db1c4f1a87cad9d7e1b6e88, type: 3}
-  - {fileID: 7662266659007147989, guid: d720b5d2a64bf418b8290ea72d231ea2, type: 3}
   - {fileID: 7662266659007147989, guid: 7356400c880b04482a130f77ab4b34c9, type: 3}
+  - {fileID: 8627753667706862790, guid: 9fa61dde7f89e45a0a305ff2f18876ee, type: 3}
+  - {fileID: 524266283348496003, guid: 53894275d114940f5b4385188c049d14, type: 3}
+  - {fileID: 4944930702441716783, guid: 74d9be98f926041258d15c13449f3037, type: 3}
+  - {fileID: 7662266659007147989, guid: dd28d39b5129f49ee831ef9287a73405, type: 3}
+  - {fileID: 6793787389145650895, guid: b0f110fa3594d41e68ed377a08112456, type: 3}
+  - {fileID: 6182887049799023699, guid: daec7f8e37b5d45a7ad9167588e68961, type: 3}
+  - {fileID: 8810569151373172313, guid: 5551c4c41e2d04e1bb78dc176282d398, type: 3}
+  - {fileID: 2716804486079901034, guid: a4c5fac832c16473a80a61daaab624ae, type: 3}
+  - {fileID: 7684373353114235311, guid: 53d55b292a4524f319e5bebb0c78cffe, type: 3}
   distanceFromImage: 0.1
   rotationX: 55
   rotationY: 0
   rotationZ: 0
+--- !u!1001 &283050405
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 978011027836870536, guid: 53d55b292a4524f319e5bebb0c78cffe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 978011027836870536, guid: 53d55b292a4524f319e5bebb0c78cffe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 978011027836870536, guid: 53d55b292a4524f319e5bebb0c78cffe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 978011027836870536, guid: 53d55b292a4524f319e5bebb0c78cffe, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 978011027836870536, guid: 53d55b292a4524f319e5bebb0c78cffe, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 978011027836870536, guid: 53d55b292a4524f319e5bebb0c78cffe, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 978011027836870536, guid: 53d55b292a4524f319e5bebb0c78cffe, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 978011027836870536, guid: 53d55b292a4524f319e5bebb0c78cffe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 978011027836870536, guid: 53d55b292a4524f319e5bebb0c78cffe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 978011027836870536, guid: 53d55b292a4524f319e5bebb0c78cffe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7684373353114235311, guid: 53d55b292a4524f319e5bebb0c78cffe, type: 3}
+      propertyPath: m_Name
+      value: solar-system
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 53d55b292a4524f319e5bebb0c78cffe, type: 3}
 --- !u!1 &334624733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,6 +1352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infoPanel: {fileID: 908812340}
+  imageTracker: {fileID: 223974230}
 --- !u!1 &1687661538
 GameObject:
   m_ObjectHideFlags: 0
@@ -1727,3 +1797,4 @@ SceneRoots:
   - {fileID: 819973207}
   - {fileID: 659009335}
   - {fileID: 1147749369}
+  - {fileID: 283050405}

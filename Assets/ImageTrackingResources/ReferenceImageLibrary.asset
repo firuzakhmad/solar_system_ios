@@ -21,29 +21,149 @@ MonoBehaviour:
       m_GuidLow: 4686093599000331171
       m_GuidHigh: 10071788049337120154
     m_SerializedTextureGuid:
-      m_GuidLow: 2617040143951657101
-      m_GuidHigh: 4499101310502259049
-    m_Size: {x: 0.06, y: 0.06}
+      m_GuidLow: 11857854336840337388
+      m_GuidHigh: 13633099764933469497
+    m_Size: {x: 0.4, y: 0.38211626}
     m_SpecifySize: 1
-    m_Name: earth
+    m_Name: sun
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 5680197466787175557
       m_GuidHigh: 1214295363918309540
     m_SerializedTextureGuid:
-      m_GuidLow: 13039365997822428316
-      m_GuidHigh: 105324614243604537
-    m_Size: {x: 0.05, y: 0.05}
+      m_GuidLow: 15317824160619543424
+      m_GuidHigh: 230200961768721754
+    m_Size: {x: 0.09, y: 0.09}
     m_SpecifySize: 1
-    m_Name: mars
+    m_Name: mercury
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 5388897944788201950
       m_GuidHigh: 2713883522994112905
     m_SerializedTextureGuid:
+      m_GuidLow: 4927994031412310951
+      m_GuidHigh: 16526235902043489049
+    m_Size: {x: 0.09, y: 0.09}
+    m_SpecifySize: 1
+    m_Name: venus
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5450032327572903614
+      m_GuidHigh: 9218474498492483988
+    m_SerializedTextureGuid:
+      m_GuidLow: 2617040143951657101
+      m_GuidHigh: 4499101310502259049
+    m_Size: {x: 0.09, y: 0.09}
+    m_SpecifySize: 1
+    m_Name: earth
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5382636924264729404
+      m_GuidHigh: 13457371003182260912
+    m_SerializedTextureGuid:
+      m_GuidLow: 13039365997822428316
+      m_GuidHigh: 105324614243604537
+    m_Size: {x: 0.09, y: 0.09}
+    m_SpecifySize: 1
+    m_Name: mars
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4631520484361677418
+      m_GuidHigh: 12564659866580961924
+    m_SerializedTextureGuid:
       m_GuidLow: 9560914690317843301
       m_GuidHigh: 12484274747806737833
-    m_Size: {x: 0.7, y: 0.7}
+    m_Size: {x: 0.09, y: 0.09}
     m_SpecifySize: 1
     m_Name: jupiter
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4712356012441030133
+      m_GuidHigh: 14877749771243843732
+    m_SerializedTextureGuid:
+      m_GuidLow: 6087016792494509928
+      m_GuidHigh: 4055669916918790650
+    m_Size: {x: 0.09, y: 0.09}
+    m_SpecifySize: 1
+    m_Name: saturn
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5266112359750293723
+      m_GuidHigh: 2584437531189755320
+    m_SerializedTextureGuid:
+      m_GuidLow: 15316445582869447796
+      m_GuidHigh: 17774417038332010377
+    m_Size: {x: 0.09, y: 0.09}
+    m_SpecifySize: 1
+    m_Name: uranus
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5017750891807684414
+      m_GuidHigh: 18406362492648343424
+    m_SerializedTextureGuid:
+      m_GuidLow: 3778237209500325982
+      m_GuidHigh: 18077612953576205193
+    m_Size: {x: 0.09, y: 0.09}
+    m_SpecifySize: 1
+    m_Name: neptune
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5727814492999104402
+      m_GuidHigh: 1137827930560695985
+    m_SerializedTextureGuid:
+      m_GuidLow: 3818053775972243270
+      m_GuidHigh: 12867368398106320568
+    m_Size: {x: 0.09, y: 0.09}
+    m_SpecifySize: 1
+    m_Name: moon
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5752702436200862764
+      m_GuidHigh: 12039780831273863836
+    m_SerializedTextureGuid:
+      m_GuidLow: 8384016927716295947
+      m_GuidHigh: 13940139544709082456
+    m_Size: {x: 0.09, y: 0.09}
+    m_SpecifySize: 1
+    m_Name: eclipse
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5539027936928094971
+      m_GuidHigh: 7304126497232941185
+    m_SerializedTextureGuid:
+      m_GuidLow: 15318108008827975622
+      m_GuidHigh: 9499363012320285722
+    m_Size: {x: 0.09, y: 0.09}
+    m_SpecifySize: 1
+    m_Name: galaxy
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5736735976727944339
+      m_GuidHigh: 7614794090602834307
+    m_SerializedTextureGuid:
+      m_GuidLow: 7217578872474198483
+      m_GuidHigh: 5888717974700826442
+    m_Size: {x: 0.09, y: 0.09}
+    m_SpecifySize: 1
+    m_Name: milky-way
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4989343855179364016
+      m_GuidHigh: 831754122239426441
+    m_SerializedTextureGuid:
+      m_GuidLow: 17604846320587324448
+      m_GuidHigh: 8573056396183514058
+    m_Size: {x: 0.09, y: 0.09}
+    m_SpecifySize: 1
+    m_Name: pluto
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5558477405738729434
+      m_GuidHigh: 8564788986709410746
+    m_SerializedTextureGuid:
+      m_GuidLow: 17608817475578176329
+      m_GuidHigh: 4117052928161020841
+    m_Size: {x: 0.09, y: 0.09}
+    m_SpecifySize: 1
+    m_Name: solar-system
     m_Texture: {fileID: 0}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ea9548c9913947bc823bb747ae0833e, type: 3}
+  m_Name: Moon
+  m_EditorClassIdentifier: 
+  objectName: Moon
+  thumbnail: {fileID: 21300000, guid: cc1c34dd343f447c49c1b20cf7b79564, type: 3}
+  detailImage: {fileID: 21300000, guid: cc1c34dd343f447c49c1b20cf7b79564, type: 3}
+  description: The Moon is Earth's natural satellite and the fifth-largest moon in
+    the Solar System. Its surface is covered with craters, mountains, and broad plains
+    formed by ancient impacts and volcanic activity, and its gravity influences Earth's
+    ocean tides.
+  interestingFact: The Moon is tidally locked to Earth, so it takes approximately
+    the same amount of time to rotate once as it takes to orbit Earth.
+  objectType: 1

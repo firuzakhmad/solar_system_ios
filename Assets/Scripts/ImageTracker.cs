@@ -1,3 +1,4 @@
+
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
@@ -8,16 +9,19 @@ public class ImageTracker : MonoBehaviour
     private ARTrackedImageManager trackedImages;
 
     [SerializeField] private GameObject[] arPrefabs;
+    [SerializeField] private float distanceFromImage = 0.07f;
+    [SerializeField] private float rotationX = 0f;
+    [SerializeField] private float rotationY = 0f;
+    [SerializeField] private float rotationZ = 0f;
 
     private readonly Dictionary<string, GameObject> arObjects =
         new Dictionary<string, GameObject>();
 
-    [SerializeField] private float distanceFromImage = 0.07f;
+    private readonly HashSet<string> pinnedObjects =
+        new HashSet<string>();
 
-    [SerializeField] private float rotationX = 0f;
-    [SerializeField] private float rotationY = 0f;
-    [SerializeField] private float rotationZ = 0f;
-    // [SerializeField] private float planetScale = 0.7f;
+    private readonly HashSet<string> dismissedObjects =
+        new HashSet<string>();
 
     private void Awake()
     {
@@ -26,84 +30,130 @@ public class ImageTracker : MonoBehaviour
 
     private void OnEnable()
     {
-        trackedImages.trackedImagesChanged += OnTrackedImagesChanged;
+        if (trackedImages != null)
+            trackedImages.trackedImagesChanged += OnTrackedImagesChanged;
     }
 
     private void OnDisable()
     {
-        trackedImages.trackedImagesChanged -= OnTrackedImagesChanged;
+        if (trackedImages != null)
+            trackedImages.trackedImagesChanged -= OnTrackedImagesChanged;
     }
 
     private void OnTrackedImagesChanged(
         ARTrackedImagesChangedEventArgs eventArgs)
     {
-        // Create objects for newly detected images
         foreach (ARTrackedImage trackedImage in eventArgs.added)
         {
+            string imageName = trackedImage.referenceImage.name;
+
             foreach (GameObject arPrefab in arPrefabs)
             {
-                if (trackedImage.referenceImage.name == arPrefab.name)
-                {
-                    GameObject newObject =
-                        Instantiate(arPrefab, trackedImage.transform);
+                if (imageName != arPrefab.name)
+                    continue;
 
-                    // Give it the same name as the reference image
-                    newObject.name = trackedImage.referenceImage.name;
-
-                    // Position above the image
-                    newObject.transform.localPosition =
-                        Vector3.forward * distanceFromImage;
-
-                    // Start with neutral local rotation
-                    newObject.transform.localRotation =
-                        Quaternion.identity;
-                    newObject.transform.localRotation =
-                        Quaternion.Euler(rotationX, rotationY, rotationZ);
-                    // newObject.transform.localScale =
-                    //     Vector3.one * planetScale;
-
-                    newObject.SetActive(true);
-
-                    arObjects[trackedImage.referenceImage.name] =
-                        newObject;
-
-                    Debug.Log(
-                        $"Created {newObject.name}"
-                    );
-
+                // Avoid creating duplicate objects.
+                if (arObjects.ContainsKey(imageName))
                     break;
-                }
+
+                GameObject newObject =
+                    Instantiate(arPrefab, trackedImage.transform);
+
+                newObject.name = imageName;
+
+                newObject.transform.localPosition =
+                    Vector3.forward * distanceFromImage;
+
+                newObject.transform.localRotation =
+                    Quaternion.Euler(rotationX, rotationY, rotationZ);
+
+                arObjects[imageName] = newObject;
+
+                newObject.SetActive(
+                    trackedImage.trackingState == TrackingState.Tracking
+                );
+
+                Debug.Log($"Created {imageName}");
+                break;
             }
         }
 
-        // Update tracking
         foreach (ARTrackedImage trackedImage in eventArgs.updated)
         {
             string imageName = trackedImage.referenceImage.name;
 
-            if (arObjects.TryGetValue(
-                    imageName,
-                    out GameObject arObject))
+            if (!arObjects.TryGetValue(
+                    imageName, out GameObject arObject))
+                continue;
+
+            bool isTracking =
+                trackedImage.trackingState == TrackingState.Tracking;
+
+            if (!isTracking)
+            {
+                // Once tracking is lost, allow the user to select
+                // this object again after the image is reacquired.
+                dismissedObjects.Remove(imageName);
+            }
+
+            // Keep a selected object visible, even when tracking is lost.
+            if (pinnedObjects.Contains(imageName))
+            {
+                arObject.SetActive(true);
+            }
+            else
             {
                 arObject.SetActive(
-                    trackedImage.trackingState ==
-                    TrackingState.Tracking
+                    isTracking &&
+                    !dismissedObjects.Contains(imageName)
                 );
             }
         }
 
-        // Remove objects that AR Foundation removes
         foreach (ARTrackedImage trackedImage in eventArgs.removed)
         {
             string imageName = trackedImage.referenceImage.name;
 
+            // Keep pinned objects even if AR Foundation removes
+            // their tracked-image entry.
+            if (pinnedObjects.Contains(imageName))
+                continue;
+
             if (arObjects.TryGetValue(
-                    imageName,
-                    out GameObject arObject))
+                    imageName, out GameObject arObject))
             {
                 Destroy(arObject);
                 arObjects.Remove(imageName);
             }
+
+            dismissedObjects.Remove(imageName);
+        }
+    }
+
+    public void PinObject(string objectName)
+    {
+        if (!arObjects.TryGetValue(
+                objectName, out GameObject arObject))
+        {
+            Debug.LogWarning(
+                $"Cannot pin '{objectName}': object not found.");
+            return;
+        }
+
+        dismissedObjects.Remove(objectName);
+        pinnedObjects.Add(objectName);
+        arObject.SetActive(true);
+    }
+
+    public void UnpinAndHideObject(string objectName)
+    {
+        pinnedObjects.Remove(objectName);
+        dismissedObjects.Add(objectName);
+
+        if (arObjects.TryGetValue(
+                objectName, out GameObject arObject))
+        {
+            arObject.SetActive(false);
         }
     }
 }
